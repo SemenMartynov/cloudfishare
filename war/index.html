@@ -10,28 +10,48 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>cloudfishare</title>
+<style type="text/css">
+html {
+	height: 100%; /* Высота страницы */
+	width: 100%;
+}
+
+body {
+	background-image: url(background.jpg); /* Путь к фоновому рисунку */
+	background-position: right bottom; /* Положение фона */
+	background-repeat: no-repeat; /* Отменяем повторение фона */
+}
+</style>
 </head>
 
 <body>
-	<h1>Cloud fishare!</h1>
-	<h2>It's small service for file sharing.</h2>
-
-	<table>
+	<table
+		style="margin-top: 30%; margin-left: 30%; margin-right: 30%; float: auto"
+		align="center ">
+		<tr>
+			<td COLSPAN=4></td>
+		</tr>
+		<tr>
+			<td COLSPAN=4 align="center"><img src="upload.jpg"></td>
+		</tr>
 		<tr>
 			<form name="sendfile" method=post enctype=multipart/form-data
 				action="FileUpload">
-			<td>File</td>
-			<td><input type="file" style="width: 100%" name="sendfile"></td>
-			<td><input type=submit value="Send"></td>
-			<td><input type=reset></td>
+				<td>File</td>
+				<td><input type="file" style="width: 100%" name="sendfile"></td>
+				<td><input type=submit value="Send"></td>
+				<td><input type=reset></td>
 			</form>
 		</tr>
 		<tr>
+			<td COLSPAN=4 align="center"><img src="download.jpg"></td>
+		</tr>
+		<tr>
 			<form name="receivefile" method=post action="FileDownload">
-			<td>Code</td>
-			<td><input type="text" style="width: 100%" name="code"></td>
-			<td><input type=submit value="Send"></td>
-			<td><input type=reset></td>
+				<td>Code</td>
+				<td><input type="text" style="width: 100%" name="code"></td>
+				<td><input type=submit value="Send"></td>
+				<td><input type=reset></td>
 			</form>
 		</tr>
 	</table>
